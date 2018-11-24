@@ -477,4 +477,4 @@ client.on('guildMemberAdd', member => {
  
  
  
-client.login(BOT_TOKEN)
+client.login(BOT_TOKEN);
